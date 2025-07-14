@@ -1,0 +1,180 @@
+/* RESET E BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0f1e 0%, #1f1f3a 100%);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    width: 90vw;
+    top: 0;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    color: #5cc6ff;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3vw;
+    font-weight: 900;
+    color: #5cc6ff;
+    text-shadow: 0 0 10px rgb(126, 204, 235);
+}
+
+nav ul {
+    display: flex;
+    gap: 48px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #74cfef;
+    font-size: 1vw;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #74cfef;
+    transition: width 0.5s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.container {
+    padding: 140px 10% 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    position: relative;
+    min-height: 100vh;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 247, 255, 0.2) 0%, rgba(15, 15, 30, 0) 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(5px);
+    z-index: 1;
+    animation: pulse 4s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(2);
+    }
+}
+
+.historia {
+    z-index: 2;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.historia h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: #00f7ff;
+    margin-bottom: 20px;
+}
+
+.historia p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #c2d4e6;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    z-index: 2;
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 247, 255, 0.1);
+}
+
+.formulario h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    color: #5cc6ff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1rem;
+    resize: none;
+}
+
+.formulario button {
+    padding: 15px;
+    background: linear-gradient(to right, #00f7ff, #0066ff);
+    border: none;
+    border-radius: 30px;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background-color: transparent;
+    border: 2px solid #00f7ff;
+    color: #fff;
+}
+
+footer {
+    background-color: rgba(15, 15, 30, 0.8);
+    color: #c2d4e6;
+    text-align: center;
+    border-radius: 0% 0 20px 20px;
+    border: #00f7ff;
+    padding: 1px;
+    position: relative;
+}
