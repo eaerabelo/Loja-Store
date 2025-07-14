@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@700&display=swap"
+        rel="stylesheet">
+    <title>Produtos - Loja Store</title>
+    <link rel="stylesheet" href="/produtos.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Loja Store</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <div class="tech-circle">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+    </main>
+
+    <section class="container">
+        <div class="list">
+            <!-- Slide 1 -->
+            <div class="item active">
+                <div class="product-img"><img src="img/iphone15promax.png" alt="iPhone 1"></div>
+                <div class="content">
+                    <div class="product-tag">Apple</div>
+                    <div class="product-name">iPhone 15 Pro Max</div>
+                    <div class="description">Poderoso, elegante, e com câmera de outro planeta.</div>
+                    <button class="btn">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="item">
+                <div class="product-img"><img src="img/iphone14pro.png" alt="iPhone 2"></div>
+                <div class="content">
+                    <div class="product-tag">Apple</div>
+                    <div class="product-name">iPhone 14 Pro</div>
+                    <div class="description">Tela fluída e performance pra dominar o dia.</div>
+                    <button class="btn">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Adicione +3 slides iguais -->
+            <div class="item">
+                <div class="product-img"><img src="img/iphone13.png" alt="iPhone 3"></div>
+                <div class="content">
+                    <div class="product-tag">Apple</div>
+                    <div class="product-name">iPhone 13</div>
+                    <div class="description">Custo-benefício com a mesma vibe Apple.</div>
+                    <button class="btn">Comprar</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="product-img"><img src="img/iphoneSE.png" alt="iPhone 4"></div>
+                <div class="content">
+                    <div class="product-tag">Apple</div>
+                    <div class="product-name">iPhone SE</div>
+                    <div class="description">Compacto, rápido e direto ao ponto.</div>
+                    <button class="btn">Comprar</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="product-img"><img src="img/iphone12.png" alt="iPhone 5"></div>
+                <div class="content">
+                    <div class="product-tag">Apple</div>
+                    <div class="product-name">iPhone 12</div>
+                    <div class="description">Design reto e vibe nostálgica com tecnologia atual.</div>
+                    <button class="btn">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botões e indicadores -->
+        <div class="arrows">
+            <button class="arrows-btn" id="prev">&#10094;</button>
+            <button class="arrows-btn" id="next">&#10095;</button>
+        </div>
+
+        <div class="indicators">
+            <div class="numbers" id="slide-number">1</div>
+            <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/carrossel.js"></script>
+</body>
+
+</html>
